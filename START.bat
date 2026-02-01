@@ -1,31 +1,35 @@
 @echo off
-color 0A
-echo.
 echo ================================================
-echo    SCHUL-ENTWICKLUNGSUMGEBUNG STARTEN
+echo   Docker Development Environment - START
 echo ================================================
 echo.
 
-cd /d "%~dp0"
-
-echo [1/2] Alle Services starten...
+echo Starte alle Services...
 docker-compose up -d
 
-timeout /t 3 /nobreak
-
-echo.
-echo [2/2] Status pruefen...
-docker-compose ps
-
 echo.
 echo ================================================
-echo    FERTIG! Oeffne diese URLs:
+echo   Services gestartet!
 echo ================================================
 echo.
-echo   Portainer:   http://localhost:9000
-echo   Python IDE:  http://localhost:8080  (python123)
-echo   Java IDE:    http://localhost:8081  (java123)
-echo   Web Dev IDE: http://localhost:8082  (web123)
+echo Warte auf Container-Initialisierung...
+timeout /t 10 /nobreak >nul
+
 echo.
-echo Druecke beliebige Taste...
-pause >nul
+echo Services sind verfuegbar unter:
+echo.
+echo   Python Dev:    http://localhost:8080
+echo   Java Dev:      http://localhost:8081
+echo   Web Dev:       http://localhost:8082
+echo   Portainer:     http://localhost:9000
+echo.
+echo   MySQL:         localhost:3306
+echo   PostgreSQL:    localhost:5432
+echo   MongoDB:       localhost:27017
+echo   Redis:         localhost:6379
+echo.
+echo Status anzeigen: docker-compose ps
+echo Logs anzeigen:   docker-compose logs -f
+echo.
+
+pause

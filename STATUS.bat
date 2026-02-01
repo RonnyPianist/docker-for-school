@@ -1,18 +1,19 @@
 @echo off
 echo ================================================
-echo   Docker Development Environment - STOP
+echo   Container Status
 echo ================================================
 echo.
 
-echo Stoppe alle Services...
-docker-compose down
+docker-compose ps
 
 echo.
 echo ================================================
-echo   Alle Services gestoppt!
+echo   Docker System Info
 echo ================================================
 echo.
-echo Zum erneuten Starten: START.bat
+
+docker system df
+
 echo.
 
 pause

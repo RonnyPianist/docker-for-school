@@ -1,18 +1,26 @@
 @echo off
 echo ================================================
-echo   Docker Development Environment - STOP
+echo   Rebuild All Containers
 echo ================================================
 echo.
 
-echo Stoppe alle Services...
+echo Stoppe Container...
 docker-compose down
 
 echo.
+echo Baue Images neu (dauert einige Minuten)...
+docker-compose build --no-cache
+
+echo.
+echo Starte Container...
+docker-compose up -d
+
+echo.
 echo ================================================
-echo   Alle Services gestoppt!
+echo   Rebuild abgeschlossen!
 echo ================================================
 echo.
-echo Zum erneuten Starten: START.bat
+echo Services sind in wenigen Minuten verfuegbar.
 echo.
 
 pause
