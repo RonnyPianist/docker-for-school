@@ -410,28 +410,6 @@ Contributions willkommen!
 4. Push zum Branch (`git push origin feature/AmazingFeature`)
 5. Öffne einen Pull Request
 
-## 📝 Lizenz
-
-MIT License - siehe [LICENSE](LICENSE) Datei
-
-## 🙏 Credits
-
-- [code-server](https://github.com/coder/code-server) - VS Code im Browser
-- [Portainer](https://www.portainer.io/) - Docker Management
-- Alle Open Source Extension Autoren
-
-## 📞 Support
-
-- 🐛 **Bug Reports**: [GitHub Issues](https://github.com/<username>/<repo>/issues)
-- 💬 **Fragen**: [GitHub Discussions](https://github.com/<username>/<repo>/discussions)
-- 📧 **Email**: deine@email.com
-
----
-
-<div align="center">
-
-**[⬆ Zurück nach oben](#-docker-development-environment)**
-
 Made with ❤️ and 🐳 Docker
 
 </div>
