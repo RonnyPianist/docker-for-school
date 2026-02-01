@@ -1,0 +1,51 @@
+services:
+  # Portainer - Docker Manager
+  portainer:
+    image: portainer/portainer-ce:latest
+    container_name: portainer
+    ports:
+      - "9000:9000"
+      - "9443:9443"
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - portainer_data:/data
+    restart: unless-stopped
+
+  # Python Development Environment
+  python:
+    build:
+      context: .
+      dockerfile: Dockerfile.python
+    container_name: python-dev
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./python-projects:/home/coder/project
+    restart: unless-stopped
+
+  # Java Development Environment
+  java:
+    build:
+      context: .
+      dockerfile: Dockerfile.java
+    container_name: java-dev
+    ports:
+      - "8081:8080"
+    volumes:
+      - ./java-projects:/home/coder/project
+    restart: unless-stopped
+
+  # Web Development Environment
+  webdev:
+    build:
+      context: .
+      dockerfile: Dockerfile.webdev
+    container_name: webdev
+    ports:
+      - "8082:8080"
+    volumes:
+      - ./web-projects:/home/coder/project
+    restart: unless-stopped
+
+volumes:
+  portainer_data:
