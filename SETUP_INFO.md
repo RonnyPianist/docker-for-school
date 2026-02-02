@@ -206,14 +206,11 @@ docker-compose down -v
 ✅ **Production-ready** - Best Practices, Health Checks, Auto-Restart
 ✅ **Multi-Language** - Python, Java, Web Dev in einem Setup
 ✅ **Vollständig isoliert** - Keine Konflikte mit anderen Tools
-✅ **GitHub-ready** - .gitignore, Dokumentation, Beispiele
 
 ## 🎉 Was du jetzt tun kannst
 
 1. ✅ **Starten**: `START.bat` oder `docker-compose up -d --build`
 2. ✅ **Testen**: Öffne http://localhost:8082 für Welcome Page
 3. ✅ **Entwickeln**: Öffne die Dev Environments und coden!
-4. ✅ **GitHub**: Pushe das Projekt mit `git-init.bat`
-5. ✅ **Teilen**: Andere können es einfach klonen und nutzen!
 
 **Made with ❤️ and 🐳 Docker**
