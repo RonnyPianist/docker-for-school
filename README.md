@@ -320,21 +320,6 @@ Pull Requests willkommen!
 3. Änderungen committen
 4. Pull Request öffnen
 
-## 📝 Lizenz
-
-MIT License
-
-## 🙏 Credits
-
-- [code-server](https://github.com/coder/code-server) - VS Code im Browser
-- [Portainer](https://www.portainer.io/) - Docker Management
-
----
-
-<div align="center">
-
-**[⬆ Nach oben](#-docker-development-environment)**
-
 Made with ❤️ and 🐳 Docker
 
 </div>
