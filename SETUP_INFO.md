@@ -89,30 +89,6 @@ python hello.py
 - Öffne http://localhost:8082 im Browser
 - Siehe die schöne Welcome Page!
 
-## 📤 Auf GitHub hochladen
-
-### Option 1: Mit git-init.bat (Windows)
-```cmd
-git-init.bat
-```
-Dann folge den Anweisungen.
-
-### Option 2: Manuell
-```bash
-# Git installieren falls nötig
-git init
-git add .
-git commit -m "Initial commit: Docker Dev Environment" -m "" -m "Assisted-By: cagent"
-
-# GitHub Repository erstellen auf https://github.com/new
-# Dann:
-git remote add origin https://github.com/<username>/<repo-name>.git
-git branch -M main
-git push -u origin main
-```
-
-Siehe `GITHUB_UPLOAD.md` für Details.
-
 ## 🎯 Was macht es besonders?
 
 ### 1. Professionelle README
@@ -240,12 +216,4 @@ docker-compose down -v
 4. ✅ **GitHub**: Pushe das Projekt mit `git-init.bat`
 5. ✅ **Teilen**: Andere können es einfach klonen und nutzen!
 
-## 📝 Lizenz
-
-MIT License
-
----
-
 **Made with ❤️ and 🐳 Docker**
-
-*Created by Docker Gordon AI Assistant*
