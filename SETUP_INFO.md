@@ -240,12 +240,6 @@ docker-compose down -v
 4. ✅ **GitHub**: Pushe das Projekt mit `git-init.bat`
 5. ✅ **Teilen**: Andere können es einfach klonen und nutzen!
 
-## 📝 Lizenz
-
-MIT License
-
----
-
 **Made with ❤️ and 🐳 Docker**
 
 *Created by Docker Gordon AI Assistant*
