@@ -1,0 +1,29 @@
+#!/bin/bash
+
+echo "========================================"
+echo " Starting Development Environment"
+echo "========================================"
+echo ""
+echo "Starting all containers..."
+echo ""
+
+docker-compose up -d
+
+echo ""
+echo "========================================"
+echo " Containers started successfully!"
+echo "========================================"
+echo ""
+echo "Access your environments:"
+echo ""
+echo " Portainer (Admin):  http://localhost:9000"
+echo " Python VS Code:     http://localhost:8001 (Password: python123)"
+echo " Java VS Code:       http://localhost:8002 (Password: java123)"
+echo " Web VS Code:        http://localhost:8003 (Password: web123)"
+echo ""
+echo "Web Dev Ports:"
+echo " - Port 3000 (React/Next.js)"
+echo " - Port 5173 (Vite)"
+echo ""
+echo "========================================"
+echo ""
