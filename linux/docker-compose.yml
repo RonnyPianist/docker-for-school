@@ -20,9 +20,6 @@ services:
     restart: unless-stopped
     ports:
       - "8001:8080"
-    environment:
-      - PASSWORD=python123
-      - SUDO_PASSWORD=python123
     volumes:
       - vscode_python_data:/home/coder/project
       - vscode_python_config:/home/coder/.local/share/code-server
@@ -32,7 +29,7 @@ services:
       - |
         sudo apt-get update && \
         sudo apt-get install -y python3 python3-pip python3-venv git curl wget && \
-        code-server --bind-addr 0.0.0.0:8080 --auth password /home/coder/project
+        code-server --bind-addr 0.0.0.0:8080 --auth none /home/coder/project
     networks:
       - devnet
 
@@ -43,9 +40,6 @@ services:
     restart: unless-stopped
     ports:
       - "8002:8080"
-    environment:
-      - PASSWORD=java123
-      - SUDO_PASSWORD=java123
     volumes:
       - vscode_java_data:/home/coder/project
       - vscode_java_config:/home/coder/.local/share/code-server
@@ -54,7 +48,7 @@ services:
       - |
         sudo apt-get update && \
         sudo apt-get install -y default-jdk maven gradle git curl wget && \
-        code-server --bind-addr 0.0.0.0:8080 --auth password /home/coder/project
+        code-server --bind-addr 0.0.0.0:8080 --auth none /home/coder/project
     networks:
       - devnet
 
@@ -67,9 +61,6 @@ services:
       - "8003:8080"
       - "3000:3000"
       - "5173:5173"
-    environment:
-      - PASSWORD=web123
-      - SUDO_PASSWORD=web123
     volumes:
       - vscode_web_data:/home/coder/project
       - vscode_web_config:/home/coder/.local/share/code-server
@@ -79,7 +70,7 @@ services:
         curl -fsSL https://deb.nodesource.com/setup_20.x | sudo -E bash - && \
         sudo apt-get install -y nodejs git curl wget && \
         sudo npm install -g npm@latest && \
-        code-server --bind-addr 0.0.0.0:8080 --auth password /home/coder/project
+        code-server --bind-addr 0.0.0.0:8080 --auth none /home/coder/project
     networks:
       - devnet
 
