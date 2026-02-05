@@ -64,14 +64,6 @@ Zum Stoppen:
    - Java: http://localhost:8002
    - Web: http://localhost:8003
 
-## Passwörter
-
-- Python VS Code: `python123`
-- Java VS Code: `java123`
-- Web VS Code: `web123`
-
-Diese Passwörter können in der `docker-compose.yml` geändert werden.
-
 ## Daten-Persistenz
 
 Alle Container nutzen Docker Volumes für persistente Datenspeicherung:
