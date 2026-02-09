@@ -27,7 +27,6 @@ Diese Umgebung bietet 3 VS Code Container für verschiedene Programmiersprachen 
    - Port: 8003
    - Passwort: web123
    - Enthält: Node.js 20, npm, git
-   - Zusätzliche Ports: 3000, 5173
 
 ## Windows Installation
 
