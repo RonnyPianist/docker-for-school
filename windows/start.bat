@@ -20,10 +20,6 @@ echo  Python VS Code:     http://localhost:8001
 echo  Java VS Code:       http://localhost:8002
 echo  Web VS Code:        http://localhost:8003
 echo.
-echo Web Dev Ports:
-echo  - Port 3000 (React/Next.js)
-echo  - Port 5173 (Vite)
-echo.
 echo ========================================
 echo.
 pause
