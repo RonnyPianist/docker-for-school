@@ -15,17 +15,14 @@ Diese Umgebung bietet 3 VS Code Container für verschiedene Programmiersprachen 
 
 2. **VS Code Python** - Python-Entwicklung
    - Port: 8001
-   - Passwort: python123
    - Enthält: Python3, pip, venv, git
 
 3. **VS Code Java** - Java-Entwicklung
    - Port: 8002
-   - Passwort: java123
    - Enthält: JDK, Maven, Gradle, git
 
 4. **VS Code Web** - Webentwicklung
    - Port: 8003
-   - Passwort: web123
    - Enthält: Node.js 20, npm, git
 
 ## Windows Installation
