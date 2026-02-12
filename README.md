@@ -60,6 +60,10 @@ Zum Stoppen:
    - Java: http://localhost:8002
    - Web: http://localhost:8003
 
+## Daten Abspeicherung von den VS Code Container
+
+Docker Desktop → Settings → Resources → File Sharing
+
 ## Daten-Persistenz
 
 Alle Container nutzen Docker Volumes für persistente Datenspeicherung:
